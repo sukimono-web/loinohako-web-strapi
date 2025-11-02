@@ -37,5 +37,3 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
 ];
-
-
