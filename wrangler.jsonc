@@ -1,5 +1,5 @@
 {
-  "name": "loinohako-web-strapi",
+  "name": "loinohako-strapi",
   "compatibility_date": "2025-11-02",
   "assets": {
     "directory": "./build"
