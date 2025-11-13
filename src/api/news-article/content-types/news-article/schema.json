@@ -24,15 +24,6 @@
     "publishedAt": {
       "type": "datetime"
     },
-    "summary": {
-      "type": "text"
-    },
-    "cover": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": ["images", "files", "videos"]
-    },
     "blocks": {
       "type": "dynamiczone",
       "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
