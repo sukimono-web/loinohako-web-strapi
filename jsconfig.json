@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
     "moduleResolution": "nodenext",
+    "module": "nodenext",
     "target": "ES2021",
     "checkJs": true,
     "allowJs": true
-  }
+  },
+  "include": ["./**/*.js", "./types/**/*.d.ts"]
 }
