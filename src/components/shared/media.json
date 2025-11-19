@@ -10,6 +10,10 @@
       "allowedTypes": ["images", "files", "videos"],
       "type": "media",
       "multiple": false
+    },
+    "caption": {
+      "type": "text",
+      "required": false
     }
   }
 }

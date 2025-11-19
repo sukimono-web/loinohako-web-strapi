@@ -1,3 +1,5 @@
+import NewsArticlePreviewButton from './components/NewsArticlePreviewButton/index.js';
+
 const config = {
   locales: ['ja'],
   translations: {
@@ -34,7 +36,20 @@ const config = {
 
 const bootstrap = () => {};
 
+const register = (app) => {
+  const contentManagerPlugin = app.getPlugin?.('content-manager');
+
+  if (contentManagerPlugin?.apis?.addDocumentAction) {
+    contentManagerPlugin.apis.addDocumentAction([NewsArticlePreviewButton]);
+  } else {
+    console.warn(
+      '[admin] Could not register NewsArticlePreviewButton. The Content Manager plugin API is unavailable.'
+    );
+  }
+};
+
 export default {
   config,
   bootstrap,
+  register,
 };
