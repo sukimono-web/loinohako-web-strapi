@@ -9,9 +9,11 @@ const NewsArticlePreviewButton = ({ model, documentId, document }) => {
 
   const isNewsArticle = model === 'api::news-article.news-article';
   const slug = document?.slug;
-  const isDraft = !document?.publishedAt;
+  const status = document?.status;
+  const isDraft = status ? status === 'draft' : !document?.publishedAt;
+  const isPublished = status ? status === 'published' : Boolean(document?.publishedAt);
 
-  const isDisabled = !documentId || !slug;
+  const isDisabled = !documentId || !slug || isPublished;
 
   const onClick = React.useCallback(async () => {
     if (!isNewsArticle || isDisabled) {
