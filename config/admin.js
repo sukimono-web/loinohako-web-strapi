@@ -50,7 +50,7 @@ module.exports = ({ env }) => ({
           previewUrl.searchParams.set('preview', '1');
           previewUrl.searchParams.set('token', token);
 
-          if (previewStatus === 'draft' || !document.publishedAt) {
+          if (previewStatus === 'draft') {
             previewUrl.searchParams.set('status', 'draft');
           }
 
