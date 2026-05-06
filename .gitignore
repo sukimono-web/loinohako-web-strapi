@@ -11,6 +11,12 @@ Icon
 ._*
 docs/*
 !/docs/preview-workflow.md
+# Structured documentation directories (incidents, designs, implementation plans, handovers)
+# are tracked so they can be shared across the team.
+!/docs/incidents
+!/docs/designs
+!/docs/plans
+!/docs/handover
 
 
 ############################
